@@ -37,6 +37,14 @@
   gap: 0.9rem;
 }
 
+.services {
+  margin-top: 1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  background: var(--card-bg);
+  padding: 1.05rem;
+}
+
 .column {
   border: 1px solid var(--card-border);
   border-radius: 1rem;
@@ -69,6 +77,37 @@
   line-height: 1.6;
 }
 
+.serviceList,
+.pointList {
+  margin-top: 0.7rem;
+}
+
+.serviceItem,
+.pointItem {
+  color: #d8cbe9;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.serviceItem + .serviceItem,
+.pointItem + .pointItem {
+  margin-top: 0.35rem;
+}
+
+.serviceItem::before,
+.pointItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: #cc7dff;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +134,27 @@
   box-shadow: 0 0 16px rgba(212, 107, 255, 0.34);
 }
 
+.cta {
+  margin-top: 1rem;
+  border: 1px solid rgba(212, 107, 255, 0.45);
+  border-radius: 1rem;
+  background: rgba(212, 107, 255, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.ctaLead {
+  color: #f6eaff;
+  font-size: 1.03rem;
+  font-weight: 700;
+}
+
+.ctaText {
+  margin-top: 0.3rem;
+  color: #e6d8f8;
+  font-size: 0.92rem;
+}
+
 @media (min-width: 48rem) {
   .page {
     padding-inline: 1.4rem;
@@ -107,6 +167,10 @@
 
   .columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta {
+    text-align: left;
   }
 }
 

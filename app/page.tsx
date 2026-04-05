@@ -53,13 +53,16 @@ const Home = () => {
       <div className={css.about}>
         <h2 className={css.aboutTitle}>Who I am</h2>
         <p className={css.aboutText}>
-          I started with HTML, CSS and JavaScript, then grew into React, Next.js and
-          Node.js development. I enjoy building features end-to-end, collaborating
-          with teams and turning product ideas into working solutions.
+          I build modern frontend applications with focus on performance, clean code,
+          and user experience.
         </p>
         <p className={css.aboutText}>
-          I am currently improving my fullstack engineering depth and writing clean,
-          scalable code for real-world products.{" "}
+          I specialize in creating responsive interfaces, integrating APIs, and
+          improving existing projects.
+        </p>
+        <p className={css.aboutText}>
+          I&apos;m continuously improving my skills and working on real-world
+          projects.{" "}
           <Link href="/about" className={css.link}>
             Learn more about my experience
           </Link>

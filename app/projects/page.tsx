@@ -5,7 +5,12 @@ const teamProjects = [
   {
     title: "CodeVibe Social Platform",
     description:
-      "Team project: social platform with separated frontend and backend architecture.",
+      "Social platform with clean UI and scalable frontend architecture.",
+    highlights: [
+      "Built responsive interface with React",
+      "Integrated REST API",
+      "Improved user experience and performance",
+    ],
     links: [
       {
         label: "Backend Repository",
@@ -27,9 +32,22 @@ const personalProjects = [
   {
     title: "NoteHub",
     description:
-      "Personal project: note management app with clean interface, search and organized notes experience.",
+      "Note management app focused on usability and clean UX.",
+    highlights: [
+      "Built full interface and functionality",
+      "Implemented search and structured notes",
+      "Optimized for responsive layout",
+    ],
     links: [{ label: "Live Page", href: "https://06-notehub-nextjs-rho-lime.vercel.app/" }],
   },
+];
+
+const services = [
+  "Build responsive landing pages",
+  "Create modern UI with React / Next.js",
+  "Fix bugs and improve existing frontend",
+  "Convert Figma design to code",
+  "Improve performance and UX",
 ];
 
 const Projects = () => {
@@ -44,6 +62,17 @@ const Projects = () => {
         </p>
       </header>
 
+      <section className={css.services}>
+        <h2 className={css.sectionTitle}>What I can help you with</h2>
+        <ul className={css.serviceList}>
+          {services.map((service) => (
+            <li key={service} className={css.serviceItem}>
+              {service}
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <div className={css.columns}>
         <section className={css.column}>
           <h2 className={css.sectionTitle}>Team projects</h2>
@@ -51,6 +80,13 @@ const Projects = () => {
             <article key={project.title} className={css.card}>
               <h3 className={css.cardTitle}>{project.title}</h3>
               <p className={css.cardText}>{project.description}</p>
+              <ul className={css.pointList}>
+                {project.highlights.map((point) => (
+                  <li key={point} className={css.pointItem}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
               <ul className={css.links}>
                 {project.links.map((link) => (
                   <li key={link.href}>
@@ -75,6 +111,13 @@ const Projects = () => {
             <article key={project.title} className={css.card}>
               <h3 className={css.cardTitle}>{project.title}</h3>
               <p className={css.cardText}>{project.description}</p>
+              <ul className={css.pointList}>
+                {project.highlights.map((point) => (
+                  <li key={point} className={css.pointItem}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
               <ul className={css.links}>
                 {project.links.map((link) => (
                   <li key={link.href}>
@@ -93,6 +136,11 @@ const Projects = () => {
           ))}
         </section>
       </div>
+
+      <section className={css.cta}>
+        <p className={css.ctaLead}>Looking for a frontend developer?</p>
+        <p className={css.ctaText}>Available for freelance projects. Let&apos;s work together.</p>
+      </section>
     </section>
   );
 };
