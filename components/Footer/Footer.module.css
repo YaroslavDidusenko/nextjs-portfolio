@@ -1,0 +1,60 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.95rem 1rem;
+  background: rgba(10, 8, 24, 0.9);
+}
+
+.content {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  color: #c9badd;
+  line-height: 1.45;
+  padding: 0.125rem 0;
+  max-width: 100%;
+}
+
+@media (min-width: 36rem) {
+  .root {
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .content {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 48rem) {
+  .root {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 0.75rem 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .content {
+    font-size: 0.875rem;
+    max-width: 24rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .root {
+    padding: 1.125rem 2rem;
+  }
+
+  .content {
+    padding: 0.25rem 0.75rem;
+  }
+}

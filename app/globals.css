@@ -1,0 +1,61 @@
+/* Mobile-first breakpoints: base -> sm 36rem -> md 48rem -> lg 64rem -> xl 80rem */
+:root {
+  --text-primary: #f6efff;
+  --text-secondary: #d8cceb;
+  --accent: #d46bff;
+  --accent-soft: rgba(212, 107, 255, 0.2);
+  --card-border: rgba(255, 255, 255, 0.14);
+  --card-bg: rgba(25, 16, 46, 0.75);
+  --surface: #0b0818;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(148, 75, 240, 0.35), transparent 28%),
+    radial-gradient(circle at 85% 10%, rgba(96, 165, 250, 0.18), transparent 30%),
+    radial-gradient(circle at 70% 82%, rgba(212, 107, 255, 0.2), transparent 30%),
+    var(--surface);
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout-main {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

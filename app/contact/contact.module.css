@@ -1,0 +1,76 @@
+.page {
+  width: min(72rem, 100%);
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.card {
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  background: var(--card-bg);
+  padding: 1.15rem;
+}
+
+.kicker {
+  color: #cfa7ff;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.82rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.45rem;
+  color: #fbf7ff;
+  margin-bottom: 0.55rem;
+}
+
+.text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #f2e5ff;
+  border: 1px solid rgba(212, 107, 255, 0.72);
+  background: rgba(212, 107, 255, 0.14);
+  border-radius: 999px;
+  padding: 0.44rem 0.82rem;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  background: rgba(212, 107, 255, 0.25);
+  box-shadow: 0 0 16px rgba(212, 107, 255, 0.34);
+}
+
+@media (min-width: 48rem) {
+  .page {
+    padding-inline: 1.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .page {
+    padding-top: 1.8rem;
+    padding-bottom: 3rem;
+  }
+}
