@@ -54,7 +54,7 @@ const personalProjects = [
       "Implemented search and structured notes",
       "Optimized for responsive layout",
     ],
-    links: [{ label: "Live Page", href: "https://06-notehub-nextjs-rho-lime.vercel.app/" }],
+    links: [{ label: "Live Page", href: "https://09-auth-yy2f.vercel.app/" }],
   },
 ];
 
