@@ -26,6 +26,22 @@ const teamProjects = [
       },
     ],
   },
+  {
+    title: "ArtistsHub (WebTune)",
+    description:
+      "Music discovery platform focused on artist browsing and user-friendly interface.",
+    highlights: [
+      "Built as a team collaboration project",
+      "Implemented responsive UI and filtering flow",
+      "Improved discovery experience for music lovers",
+    ],
+    links: [
+      {
+        label: "Live Page",
+        href: "https://t1mofii.github.io/WebTune/",
+      },
+    ],
+  },
 ];
 
 const personalProjects = [
